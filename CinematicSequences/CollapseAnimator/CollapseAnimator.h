@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface CollapseAnimator : NSObject
+@interface CollapseAnimator : NSObject<UIViewControllerAnimatedTransitioning>
+
+/**
+ *  转场持续时间
+ */
+@property (nonatomic, assign) NSTimeInterval duration;
+
+/**
+ *  碎片大小
+ */
+@property (nonatomic, assign) NSInteger sideLength;
+
 
 @end

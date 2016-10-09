@@ -17,8 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIImageView *image = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    image.image        = [UIImage imageNamed:@"Image"];
+    [self.view addSubview:image];
+    
+    UITapGestureRecognizer *tapToClose = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(close)];
+    [self.view addGestureRecognizer:tapToClose];
 }
 
+- (void)close {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

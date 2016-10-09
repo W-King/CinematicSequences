@@ -15,6 +15,8 @@
 		5728F0C71DAA4470009E4FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5728F0C51DAA4470009E4FAD /* LaunchScreen.storyboard */; };
 		5728F0D21DAA4470009E4FAD /* CinematicSequencesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728F0D11DAA4470009E4FAD /* CinematicSequencesTests.m */; };
 		5728F0DD1DAA4470009E4FAD /* CinematicSequencesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728F0DC1DAA4470009E4FAD /* CinematicSequencesUITests.m */; };
+		5728F0ED1DAA44F9009E4FAD /* CollapseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728F0EC1DAA44F9009E4FAD /* CollapseAnimator.m */; };
+		5728F0F01DAA4546009E4FAD /* PPX_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728F0EF1DAA4546009E4FAD /* PPX_ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		5728F0D81DAA4470009E4FAD /* CinematicSequencesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinematicSequencesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5728F0DC1DAA4470009E4FAD /* CinematicSequencesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CinematicSequencesUITests.m; sourceTree = "<group>"; };
 		5728F0DE1DAA4470009E4FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5728F0EB1DAA44F9009E4FAD /* CollapseAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollapseAnimator.h; sourceTree = "<group>"; };
+		5728F0EC1DAA44F9009E4FAD /* CollapseAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollapseAnimator.m; sourceTree = "<group>"; };
+		5728F0EE1DAA4546009E4FAD /* PPX_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPX_ViewController.h; sourceTree = "<group>"; };
+		5728F0EF1DAA4546009E4FAD /* PPX_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPX_ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 		5728F0B61DAA4470009E4FAD /* CinematicSequences */ = {
 			isa = PBXGroup;
 			children = (
+				5728F0EA1DAA44EA009E4FAD /* CollapseAnimator */,
 				5728F0BA1DAA4470009E4FAD /* AppDelegate.h */,
 				5728F0BB1DAA4470009E4FAD /* AppDelegate.m */,
 				5728F0BD1DAA4470009E4FAD /* ViewController.h */,
 				5728F0BE1DAA4470009E4FAD /* ViewController.m */,
+				5728F0EE1DAA4546009E4FAD /* PPX_ViewController.h */,
+				5728F0EF1DAA4546009E4FAD /* PPX_ViewController.m */,
 				5728F0C01DAA4470009E4FAD /* Main.storyboard */,
 				5728F0C31DAA4470009E4FAD /* Assets.xcassets */,
 				5728F0C51DAA4470009E4FAD /* LaunchScreen.storyboard */,
@@ -138,6 +147,15 @@
 				5728F0DE1DAA4470009E4FAD /* Info.plist */,
 			);
 			path = CinematicSequencesUITests;
+			sourceTree = "<group>";
+		};
+		5728F0EA1DAA44EA009E4FAD /* CollapseAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				5728F0EB1DAA44F9009E4FAD /* CollapseAnimator.h */,
+				5728F0EC1DAA44F9009E4FAD /* CollapseAnimator.m */,
+			);
+			path = CollapseAnimator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +291,8 @@
 				5728F0BF1DAA4470009E4FAD /* ViewController.m in Sources */,
 				5728F0BC1DAA4470009E4FAD /* AppDelegate.m in Sources */,
 				5728F0B91DAA4470009E4FAD /* main.m in Sources */,
+				5728F0ED1DAA44F9009E4FAD /* CollapseAnimator.m in Sources */,
+				5728F0F01DAA4546009E4FAD /* PPX_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
